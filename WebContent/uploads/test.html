@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head prefix='og: http://ogp.me/ns#'>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='object' property='og:type'>
+<meta content='GitLab' property='og:site_name'>
+<meta content='Projects · Dashboard' property='og:title'>
+<meta content='Laboratorio de Informática UNPSJB-FI-PM'
+	property='og:description'>
+<meta
+	content='http://fipmgit.no-ip.biz:8102/assets/gitlab_logo-f94735ed1486ec1e35ce78e4c1747b4d.png'
+	property='og:image'>
+<meta content='http://fipmgit.no-ip.biz:8102/' property='og:url'>
+<meta content='summary' property='twitter:card'>
+<meta content='Projects · Dashboard' property='twitter:title'>
+<meta content='Laboratorio de Informática UNPSJB-FI-PM'
+	property='twitter:description'>
+<meta
+	content='http://fipmgit.no-ip.biz:8102/assets/gitlab_logo-f94735ed1486ec1e35ce78e4c1747b4d.png'
+	property='twitter:image'>
+
+<title>Projects · Dashboard · GitLab</title>
+<meta content='Laboratorio de Informática UNPSJB-FI-PM'
+	name='description'>
+<link rel="shortcut icon" type="image/x-icon"
+	href="/assets/favicon-0037f4682f7f2d45973338aad43f3d54.ico" />
+<link rel="stylesheet" media="all"
+	href="/assets/application-9b36a04f9f4e169587d71114d5cea44e.css" />
+<link rel="stylesheet" media="print"
+	href="/assets/print-2cb1262fb60ceb73f2fe76fd1a61dccf.css" />
+<script src="/assets/application-8b25180c390b4f93505f1e25d4d9db85.js"></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token"
+	content="S96ULJDKhM8OB8W5E9ypD29kFd0BpGyMmcVb3snmLwQuwGJ8T5wL4box11d82ZyKE3vjiSURM6IGzkAUx7RKPA==" />
+<script>
+	//<![CDATA[
+	window.gon = {};
+	gon.api_version = "v3";
+	gon.default_avatar_url = "http://fipmgit.no-ip.biz:8102/assets/no_avatar-0801eb7ed213327da2a534095a75b248.png";
+	gon.default_issues_tracker = "gitlab";
+	gon.max_file_size = 10;
+	gon.relative_url_root = "";
+	gon.user_color_scheme = "white";
+	gon.current_user_id = 5;
+	gon.api_token = "SbuTyJKKePYpRff1eLAK";
+	//]]>
+</script>
+<meta content='origin-when-cross-origin' name='referrer'>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1'
+	name='viewport'>
+<meta content='#474D57' name='theme-color'>
+<link rel="apple-touch-icon" type="image/x-icon"
+	href="/assets/touch-icon-iphone-c2b181d197c3b7be4f8ac381458895bb.png" />
+<link rel="apple-touch-icon" type="image/x-icon"
+	href="/assets/touch-icon-ipad-fede15aef7610235936a27957400503a.png"
+	sizes="76x76" />
+<link rel="apple-touch-icon" type="image/x-icon"
+	href="/assets/touch-icon-iphone-retina-88529dea2f9320df1a3cc45d92e86147.png"
+	sizes="120x120" />
+<link rel="apple-touch-icon" type="image/x-icon"
+	href="/assets/touch-icon-ipad-retina-c0dbda7e71802ee480f6d666da4b834a.png"
+	sizes="152x152" />
+<meta
+	content='/assets/msapplication-tile-2efcb14bec26fd879dd1914db581f8f9.png'
+	name='msapplication-TileImage'>
+<meta content='#30353E' name='msapplication-TileColor'>
+<link rel="alternate" type="application/atom+xml" title="All activity"
+	href="http://fipmgit.no-ip.biz:8102/dashboard/projects.atom?private_token=SbuTyJKKePYpRff1eLAK" />
+
+
+
+
+<style>
+[data-user-is] {
+	display: none !important;
+}
+
+[data-user-is="5"] {
+	display: block !important;
+}
+
+[data-user-is="5"][data-display="inline"] {
+	display: inline !important;
+}
+
+[data-user-is-not] {
+	display: block !important;
+}
+
+[data-user-is-not][data-display="inline"] {
+	display: inline !important;
+}
+
+[data-user-is-not="5"] {
+	display: none !important;
+}
+</style>
+
+</head>
+
+<body class='ui_charcoal' data-page='root:index'>
+
+	<header class='header-collapsed navbar navbar-fixed-top navbar-gitlab'>
+		<div class='container-fluid'>
+			<div class='header-content'>
+				<button class='navbar-toggle' type='button'>
+					<span class='sr-only'>Toggle navigation</span> <i
+						class="fa fa-bars"></i>
+				</button>
+				<div class='navbar-collapse collapse'>
+					<ul class='nav navbar-nav pull-right'>
+						<li class='hidden-sm hidden-xs'>
+							<div class='search'>
+								<form class="navbar-form pull-left" action="/search"
+									accept-charset="UTF-8" method="get">
+									<input name="utf8" type="hidden" value="&#x2713;" /> <input
+										type="search" name="search" id="search" placeholder="Search"
+										class="search-input form-control" spellcheck="false" /> <input
+										type="hidden" name="group_id" id="group_id" /> <input
+										type="hidden" name="repository_ref" id="repository_ref" />
+
+									<div class='search-autocomplete-opts hide'
+										data-autocomplete-path='/search/autocomplete'></div>
+								</form>
+
+							</div> <script>
+								$('.search-input').on('keyup', function(e) {
+									if (e.keyCode == 27) {
+										$('.search-input').blur();
+									}
+								});
+							</script>
+
+						</li>
+						<li class='visible-sm visible-xs'><a title="Search"
+							data-toggle="tooltip" data-placement="bottom"
+							data-container="body" href="/search"><i class="fa fa-search"></i>
+						</a></li>
+						<li><a title="Todos" data-toggle="tooltip"
+							data-placement="bottom" data-container="body"
+							href="/dashboard/todos"><span
+								class='badge todos-pending-count'> 5 </span> </a></li>
+						<li><a title="New project" data-toggle="tooltip"
+							data-placement="bottom" data-container="body"
+							href="/projects/new"><i class="fa fa-plus fa-fw"></i> </a></li>
+						<li><a class="logout" title="Sign out" data-toggle="tooltip"
+							data-placement="bottom" data-container="body" rel="nofollow"
+							data-method="delete" href="/users/sign_out"><i
+								class="fa fa-sign-out"></i> </a></li>
+					</ul>
+				</div>
+				<h1 class='title'>
+					<a href="/dashboard/projects">Projects</a>
+				</h1>
+			</div>
+		</div>
+	</header>
+
+
+	<div class='page-sidebar-collapsed page-with-sidebar'>
+
+		<div class='nicescroll sidebar-collapsed sidebar-wrapper'>
+			<div class='header-logo'>
+				<a id='logo'> <img
+					src="/uploads/appearance/header_logo/1/unpsjb_logo_small.png"
+					alt="Unpsjb logo small" />
+				</a> <a class="gitlab-text-container-link" title="Dashboard"
+					id="js-shortcuts-home" href="/">
+					<div class='gitlab-text-container'>
+						<h3>GitLab</h3>
+					</div> </a>
+			</div>
+			<ul class='nav nav-sidebar'>
+				<li class="home active"><a title="Projects"
+					href="/dashboard/projects"><i class="fa fa-home fa-fw"></i> <span>
+							Projects </span> </a></li>
+				<li class=""><a title="Todos" href="/dashboard/todos"><i
+						class="fa fa-bell fa-fw"></i> <span> Todos <span
+							class='count'>5</span>
+					</span> </a></li>
+				<li class=""><a class="shortcuts-activity" title="Activity"
+					href="/dashboard/activity"><i class="fa fa-dashboard fa-fw"></i>
+						<span> Activity </span> </a></li>
+				<li class=""><a title="Groups" href="/dashboard/groups"><i
+						class="fa fa-group fa-fw"></i> <span> Groups </span> </a></li>
+				<li class=""><a title="Milestones" href="/dashboard/milestones"><i
+						class="fa fa-clock-o fa-fw"></i> <span> Milestones </span> </a></li>
+				<li class=""><a title="Issues" class="shortcuts-issues"
+					href="/dashboard/issues?assignee_id=5"><i
+						class="fa fa-exclamation-circle fa-fw"></i> <span> Issues <span
+							class='count'>16</span>
+					</span> </a></li>
+				<li class=""><a title="Merge Requests"
+					class="shortcuts-merge_requests"
+					href="/dashboard/merge_requests?assignee_id=5"><i
+						class="fa fa-tasks fa-fw"></i> <span> Merge Requests <span
+							class='count'>0</span>
+					</span> </a></li>
+				<li class=""><a title="Snippets" href="/dashboard/snippets"><i
+						class="fa fa-clipboard fa-fw"></i> <span> Snippets </span> </a></li>
+				<li class=""><a title="Help" href="/help"><i
+						class="fa fa-question-circle fa-fw"></i> <span> Help </span> </a></li>
+				<li class='separate-item'></li>
+				<li class=""><a title="Profile Settings"
+					data-placement="bottom" href="/profile"><i
+						class="fa fa-user fa-fw"></i> <span> Profile Settings </span> </a></li>
+			</ul>
+
+			<div class='collapse-nav'>
+				<a class="toggle-nav-collapse" title="Open/Close" href="#"><i
+					class="fa fa-angle-right"></i></a>
+
+			</div>
+			<a class="sidebar-user" title="Profile" href="/u/Mallon"><img
+				alt="Profile" class="avatar avatar s36"
+				src="http://www.gravatar.com/avatar/d80c66e9c6299c4904db6f16905b7b31?s=120&amp;d=identicon" />
+				<div class='username'>Mallon</div> </a>
+		</div>
+		<div class='content-wrapper'>
+			<div class='flash-container'>
+				<div class='flash-alert'>You are already signed in.</div>
+			</div>
+
+
+
+			<div class='container-fluid container-limited'>
+				<div class='content'>
+					<div class='clearfix'>
+						<div class='top-area'>
+							<ul class='nav-links'>
+								<li class="active"><a title="Home"
+									class="shortcuts-activity" data-placement="right"
+									href="/dashboard/projects">Your Projects </a></li>
+								<li class=""><a title="Starred Projects"
+									data-placement="right" href="/dashboard/projects/starred">Starred
+										Projects </a></li>
+								<li class=""><a title="Explore" data-placement="right"
+									href="/explore">Explore Projects </a></li>
+							</ul>
+							<div class='nav-controls'>
+								<form class="project-filter-form" id="project-filter-form"
+									action="http://fipmgit.no-ip.biz:8102/" accept-charset="UTF-8"
+									method="get">
+									<input name="utf8" type="hidden" value="&#x2713;" /> <input
+										type="search" name="filter_projects"
+										id="project-filter-form-field" placeholder="Filter by name..."
+										class="project-filter-form-field form-control input-short projects-list-filter"
+										spellcheck="false" />
+								</form>
+
+								<div class='dropdown inline'>
+									<button class='dropdown-toggle btn' data-toggle='dropdown'
+										type='button'>
+										<span class='light'></span> Last updated <b class='caret'></b>
+									</button>
+									<ul class='dropdown-menu'>
+										<li><a
+											href="/dashboard/projects?group=&amp;scope=&amp;sort=name_asc&amp;tag=&amp;visibility_level=">Name
+										</a><a
+											href="/dashboard/projects?group=&amp;scope=&amp;sort=id_desc&amp;tag=&amp;visibility_level=">Last
+												created </a><a
+											href="/dashboard/projects?group=&amp;scope=&amp;sort=id_asc&amp;tag=&amp;visibility_level=">Oldest
+												created </a><a
+											href="/dashboard/projects?group=&amp;scope=&amp;sort=updated_desc&amp;tag=&amp;visibility_level=">Last
+												updated </a><a
+											href="/dashboard/projects?group=&amp;scope=&amp;sort=updated_asc&amp;tag=&amp;visibility_level=">Oldest
+												updated </a></li>
+									</ul>
+								</div>
+
+								<a class="btn btn-new" href="/projects/new"><i
+									class="fa fa-plus"></i> New Project </a>
+							</div>
+						</div>
+
+						<div class='projects-list-holder'>
+							<ul class='projects-list'>
+								<li class='project-row'><a class="project"
+									href="/Mallon/TP2-03-stats"><div
+											class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #FFEBEE; color: #555">T</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> Emanuel / </span> <span
+											class='project-name filter-title'> TP2-03-stats </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Laboratorio de Programación y lenguajes</p>
+
+										<p>Trabajo Práctico 2.03</p>
+
+										<p>Gestión de ventas y reportes estadísticos.</p>
+									</div></li>
+
+								<li class='no-description project-row'><a class="project"
+									href="/juanmadryn/tp2-core"><div
+											class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #F3E5F5; color: #555">T</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> Juan Manuel Cortez / </span> <span
+											class='project-name filter-title'> tp2-core </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div></li>
+
+								<li class='no-description project-row'><a class="project"
+									href="/labprog/tp2-core"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #E0F2F1; color: #555">T</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> tp2-core </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div></li>
+
+								<li class='no-description project-row'><a class="project"
+									href="/Mallon/tp2-core"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #E8EAF6; color: #555">T</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> Emanuel / </span> <span
+											class='project-name filter-title'> tp2-core </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/TP2-03-stats"><div
+											class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #FFEBEE; color: #555">T</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> TP2-03-stats </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Laboratorio de Programación y lenguajes</p>
+
+										<p>Trabajo Práctico 2.03</p>
+
+										<p>Gestión de ventas y reportes estadísticos.</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/solidgraph"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #E3F2FD; color: #555">S</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> solidgraph </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Implementación SOLID del TAD Grafo</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/castillos"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #E0F2F1; color: #555">C</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> castillos </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Trabajo Práctico 1.02 - Castillos</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/TP2-04-mrplite"><div
+											class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #EEEEEE; color: #555">T</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> TP2-04-mrplite </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Trabajo Práctico2.04</p>
+
+										<p>MRP Lite</p>
+
+										<p>Planificador de requerimientos de manufactura.</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/TP2-02-manodeobra"><div
+											class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #EEEEEE; color: #555">T</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> TP2-02-manodeobra </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Laboratorio de Programación y lenguajes</p>
+
+										<p>Trabajo Práctico 2.02</p>
+
+										<p>Partes de Mano de Obra</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/TP2-01-delivery"><div
+											class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #FBE9E7; color: #555">T</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> TP2-01-delivery </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Laboratorio de Programación y lenguajes</p>
+
+										<p>Trabajo Práctico 2.01</p>
+
+										<p>Pedido, entrega y facturación de Artículos.</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/Mallon/aplvive"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #EEEEEE; color: #555">A</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> Emanuel / </span> <span
+											class='project-name filter-title'> aplvive </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Trabajo Práctico 1.01 - APL VIVE!</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/core"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #F3E5F5; color: #555">C</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> core </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Contenido común para la materia. Transversal a todos
+											los trabajos prácticos.</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/apuesta"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #EEEEEE; color: #555">A</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> apuesta </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Trabajo Práctico 1.04 - Una Apuesta Segura</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/teclado"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #F3E5F5; color: #555">T</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> teclado </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Trabajo Práctico 1.06 - Teclado Virtual</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/ventanas"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #FFEBEE; color: #555">V</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> ventanas </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Trabajo Práctico 1.05 - Gestor de Vantanas</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/ruteo"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #FBE9E7; color: #555">R</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> ruteo </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Trabajo Práctico 1.03 - Ruteo</p>
+									</div></li>
+
+								<li class='project-row'><a class="project"
+									href="/labprog/aplvive"><div class='dash-project-avatar'>
+											<div class="avatar project-avatar s40 identicon"
+												style="background-color: #E8EAF6; color: #555">A</div>
+										</div> <span class='project-full-name'> <span
+											class='namespace-name'> labprog / </span> <span
+											class='project-name filter-title'> aplvive </span>
+									</span> </a>
+								<div class='project-controls'>
+										<span> <i class="fa fa-star"></i> 0
+										</span>
+									</div>
+									<div class='project-description'>
+										<p>Trabajo Práctico 1.01 - APL VIVE!</p>
+									</div></li>
+
+
+							</ul>
+							<script>
+								new ProjectsList();
+								Dashboard.init();
+							</script>
+
+							<script>
+								Dashboard.init()
+							</script>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+

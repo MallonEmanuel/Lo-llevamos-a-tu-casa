@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ 
+
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<span class="lead">ShipementProvider </span>
+		</div>
+		<div class="panel-body">
+			<form data-ng-submit="submit()" name="myForm" class="form-horizontal">
+				<input type="hidden" data-ng-model="shipment" />
+				<div class="row">
+					<div class="form-group col-md-8" >
+						<label class="col-md-1 control-lable">Provider</label>
+						<div class="col-md-4">
+							<input id="provider" type="text"
+								data-ng-model="shipmentProvider.provider"
+								class="form-control input-sm"
+								data-uib-typeahead="suggestion.name for suggestion in providers($viewValue)"
+								data-typeahead-on-select="onSelectProvider($item,$model,$label)">
+						</div>
+						<label class="col-md-1 control-lable">Date</label>
+						<div class="col-md-4">
+							<input name="date" id="date" type="date"
+								class="form-control input-sm" placeholder="Enter surname"
+								data-ng-model="shipmentProvider.deliveryDate"   />
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="panel-footer">
+			<button type="button" data-ng-click="saveAndContinue()" class="btn btn-primary btn-sm">Save
+				and Continue</button>
+
+			<button id="back" type="button" data-ng-click="goList()"
+				class="btn btn-warning btn-sm">Back</button>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById("provider").focus();
+</script>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<span class="lead"> </span>
+
+			<div class="row"></div>
+			<div class="row">
+
+				<div class="form-group col-md-12">
+					<label class="col-md-1 control-lable">ShipmentP</label>
+					<div class="col-md-3">
+						<input id="shipmentProvider" type="text" readonly="readonly"
+							data-ng-model="shipmentProvider.id" class="form-control input-sm">
+					</div>
+					<label class="col-md-1 control-lable">Provider</label>
+					<div class="col-md-3">
+						<input id="provider" type="text" readonly="readonly"
+							data-ng-model="shipmentProvider.provider.name"
+							class="form-control input-sm">
+					</div>
+
+					<label class="col-md-1 control-lable">Date</label>
+					<div class="col-md-3">
+						<input name="date" id="date" type="date" readonly="readonly"
+							class="form-control input-sm" placeholder="Enter surname"
+							data-ng-model="myDate" />
+						<!-- 							| date:'dd/MM/yyyy' -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="panel-body">
+
+
+
+			<div class="row">
+				<div class="form-group col-md-12">
+
+					<label class="col-md-1 control-lable">Article</label>
+					<div class="col-md-3">
+						<input id="article" type="text"
+							data-ng-model="articleOrderProvider.article"
+							class="form-control input-sm"
+							data-uib-typeahead="suggestion.name for suggestion in articles($viewValue)"
+							data-typeahead-on-select="onSelectArticle($item,$model,$label)">
+					</div>
+
+					<label class="col-md-1 control-lable">Price</label>
+					<div class="col-md-3">
+						<input name="price" id="price" type="text" readonly="readonly"
+							class="form-control input-sm" placeholder=""
+							data-ng-model="articleOrderProvider.article.price" />
+					</div>
+
+					<label class="col-md-1 control-lable">Quantity</label>
+					<div class="col-md-3">
+						<input id="quantity" type="number" class="form-control input-sm"  min="1"
+							placeholder="Enter quantity"
+							data-ng-model="articleOrderProvider.quantity" />
+					</div>
+
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+
+		<div class="panel-footer">
+			<button id="add" type="button" data-ng-click="addAndContinue()"
+				class="btn btn-primary btn-sm">Add and Continue</button>
+
+			<!-- 			<button type="button" data-ng-click="save()" -->
+			<!-- 				class="btn btn-primary btn-sm">Save</button> -->
+
+			<button id="back" type="button" data-ng-click="saveArticles()"
+				class="btn btn-warning btn-sm">Save</button>
+		</div>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+		<div class="panel-heading">
+			<span class="lead">List of ArticleOrderProvider </span>
+		</div>
+		<div class="panel-body">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID Art.</th>
+						<th>Articulo</th>
+						<th>Quantity</th>
+						<th>Price</th>
+						<th width="20%"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="u in articleOrderProviders">
+						<td><span data-ng-bind="u.article.id"></span></td>
+						<td><span data-ng-bind="u.article.name"></span></td>
+						<td><span data-ng-bind="u.quantity"></span></td>
+						<td><span data-ng-bind="u.article.price"></span></td>
+						<td>
+							<!-- 							<button type="button" data-ng-click="" --> <!-- 								class="btn btn-primary custom-width">View</button> -->
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	document.getElementById("article").focus();
+
+	document.getElementById("add").addEventListener("keyup", function(event) {
+		event.preventDefault();
+		if (event.keyCode == 13) {
+			document.getElementById("article").focus();
+		}
+	});
+
+	document.getElementById("article").addEventListener("keyup",
+			function(event) {
+				event.preventDefault();
+				if (event.keyCode == 9) {
+					document.getElementById("quantity").focus();
+				}
+			});
+</script>

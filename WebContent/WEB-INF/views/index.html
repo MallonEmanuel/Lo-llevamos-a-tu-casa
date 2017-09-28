@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>App</title>
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+<link href="static/css/app.css" rel="stylesheet"></link>
+<!--   <link data-require="bootstrap-css@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" /> -->
+
+<!-- 	<script type="text/ng-template" id="/tpl.html"> -->
+<!--             <a><div> -->
+<!--                 <span style="display:block;" class="registration" ng-bind-html="match.model.fdlAccountName | uibTypeaheadHighlight:query"></span> -->
+<!--                 <span ng-bind-html="match.model.fdlAccountDesc | uibTypeaheadHighlight:query"></span> &middot; -->
+<!--                 <span ng-bind-html="match.model.status | uibTypeaheadHighlight:query"></span> -->
+<!--             </div></a> -->
+<!--         </script> -->
+
+</head>
+<body ng-app="myApp" class="ng-cloak">
+	<ng-include src="'static/partials/navigation/navBar.html'"></ng-include>
+	<div data-ng-view=""></div>
+
+	<script src="static/js/jquery-1.12.3.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/angular.min.js"></script>
+	<script src="static/js/angular-route.js"></script>
+
+	<!-- <script data-require="angular.js@1.5.0" data-semver="1.5.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script> -->
+	<!--     <script data-require="ui-bootstrap@1.1.1" data-semver="1.1.1" src="https://cdn.rawgit.com/angular-ui/bootstrap/gh-pages/ui-bootstrap-1.1.1.js"></script> -->
+
+	<!-- 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.1/ui-bootstrap-tpls.js"></script> -->
+
+	<script src="static/js/ui-bootstrap-tpls-1.2.1.js"></script>
+
+	<script src="static/js/app.js"></script>
+	<script src="static/js/env.js"></script>
+	<script src="static/js/routes.js"></script>
+
+	<script src="static/js/service/user_service.js"></script>
+	<script src="static/js/controller/user_controller.js"></script>
+
+	<script src="static/js/service/customer_service.js"></script>
+	<script src="static/js/controller/customer_controller.js"></script>
+	<script src="static/js/controller/customer_edit_controller.js"></script>
+
+
+	<script src="static/js/service/provider_service.js"></script>
+
+	<script src="static/js/service/shipment_provider_service.js"></script>
+	<script src="static/js/controller/shipment_provider_controller.js"></script>
+	<script src="static/js/controller/shipment_provider_edit_controller.js"></script>
+
+	<script src="static/js/service/article_service.js"></script>
+	<script src="static/js/service/article_order_provider_service.js"></script>
+	<script src="static/js/controller/select_article_controller.js"></script>
+
+	<script src="static/js/service/ranking_customer_service.js"></script>
+	<script src="static/js/controller/ranking_customer_controller.js"></script>
+
+	<script src="static/js/service/ranking_article_service.js"></script>
+	<script src="static/js/controller/ranking_article_controller.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+body, #mainWrapper {
+	height: 70%;
+	background-color: rgb(245, 245, 245);
+}
+
+body, .form-control {
+	font-size: 12px !important;
+}
+
+.floatRight {
+	float: right;
+	margin-right: 18px;
+}
+
+.has-error {
+	color: red;
+}
+
+.formcontainer {
+	background-color: #DAE8E8;
+	padding: 20px;
+}
+
+.tablecontainer {
+	padding-left: 20px;
+}
+
+.generic-container {
+	width: 80%;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #EAE7E7;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 0 30px black;
+}
+
+.custom-width {
+	width: 80px !important;
+}
+
+
+ul {
+/* 	menu */
+/*     list-style-type: none; */
+/*     margin: 0; */
+/*     padding: 0; */
+/*     width: 10%; */
+/*     background-color: #585858;  */
+/* background-color: red; */
+/*     height: 100%; Full height */
+/*     position: fixed; Make it stick, even on scroll */
+/*     overflow: auto; Enable scrolling if the sidenav has too much content */
+}
+
+
+li a {
+/* 	letras */
+    display: block;
+    color: white;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #2E2E2E;
+/*     background-color: white; */
+    color: white;
+}
+
+img {
+	width: 40px;
+/* 	background-color:#585858; */
+/*     color: #585858; */
+    text-decoration: none;
+}

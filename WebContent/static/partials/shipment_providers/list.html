@@ -1,0 +1,122 @@
+<link href="static/css/users.css" rel="stylesheet"></link>
+<div class="container">
+
+	<div class="panel panel-default">
+
+		<div class="panel-heading">
+			<span class="lead">Shipment Provider </span>
+		</div>
+
+		<div class="panel-body">
+			<form data-ng-submit="submit()" name="myForm" class="form-horizontal">
+				<!-- Primera Linea -->
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-1 control-lable">ID</label>
+						<div class="col-md-2">
+							<input id="shipmentProviderId" type="text" data-ng-model="filter.shipmentProviderId"
+								class="form-control input-sm" placeholder="Enter ID" />
+						</div>
+
+						<label class="col-md-1 control-lable">Provider</label>
+						<div class="col-md-2">
+							<input id="providerName" type="text" data-ng-model="filter.providerName"
+								class="form-control input-sm" placeholder="Enter provider" />
+						</div>
+
+						<label class="col-md-1 control-lable">Begin Date</label>
+						<div class="col-md-2">
+							<input id="beginDate" type="date" data-ng-model="filter.beginDate"
+								class="form-control input-sm"  />
+						</div>
+						
+							<label class="col-md-1 control-lable">End Date</label>
+						<div class="col-md-2">
+							<input id="endDate" type="date" data-ng-model="filter.endDate"
+								class="form-control input-sm"  />
+						</div>
+					</div>	
+
+				</div>
+				
+			</form>
+		</div>
+		<div class="panel-footer">
+			<button id="filterProviders" type="button" data-ng-click="filterAll()"
+				class="btn btn-primary btn-sm ">Search</button>
+			
+			<button type="button" data-ng-click="goCreate()"
+				class="btn btn-primary btn-sm" >Add</button>
+		</div>
+
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+		<div class="panel-heading">
+			<span class="lead">List of ShipmentProvider </span>
+		</div>
+		<div class="panel-body">
+			<table class="table table-hover" >
+				<thead>
+					<tr>
+						<th>Shipment</th>
+						<th>Provider</th>
+						<th>Delivery Date</th>
+						<th width="20%"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="u in shipmentProviders">
+						<td><span data-ng-bind="u.id"></span></td>
+						<td><span data-ng-bind="u.provider.name"></span></td>
+						<td><span
+							data-ng-bind="u.deliveryDate | date:'dd / MM / yyyy'"></span></td>
+						<td>
+							<button type="button" data-ng-click="goEdit(u.id)"
+								class="btn btn-primary custom-width">View</button> 
+<!-- 							<button type="button" data-ng-click="" -->
+<!-- 								class="btn btn-warning custom-width">Remove</button> -->
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById("shipmentProviderId").focus();
+	
+	document.getElementById("shipmentProviderId").addEventListener("keyup", function(event) {
+		event.preventDefault();
+		if (event.keyCode == 13) {
+			document.getElementById("filterProviders").click();
+		}
+	});
+	document.getElementById("providerName").addEventListener("keyup",
+			function(event) {
+				event.preventDefault();
+				if (event.keyCode == 13) {
+					document.getElementById("filterProviders").click();
+				}
+			});
+	document.getElementById("beginDate").addEventListener("keyup", function(event) {
+		event.preventDefault();
+		if (event.keyCode == 13) {
+			document.getElementById("filterProviders").click();
+		}
+	});
+	
+	document.getElementById("endDate").addEventListener("keyup", function(event) {
+		event.preventDefault();
+		if (event.keyCode == 13) {
+			document.getElementById("filterProviders").click();
+		}
+	});
+	
+	</script>
+

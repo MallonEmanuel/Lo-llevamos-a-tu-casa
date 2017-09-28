@@ -1,0 +1,106 @@
+<!-- Customers -->
+<link href="static/css/users.css" rel="stylesheet"></link>
+<div class="container">
+	<div class="panel panel-default">
+
+		<div class="panel-heading">
+			<span class="lead">Customer </span>
+		</div>
+
+		<div class="panel-body">
+			<form data-ng-submit="submit()" name="myForm" class="form-horizontal">
+<!-- 								<input type="hidden" data-ng-model="user.id" /> -->
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-1 control-lable">Name</label>
+						<div class="col-md-3">
+							<input id="name" type="text" data-ng-model="filter.name"
+								class="form-control input-sm" placeholder="Enter name" />
+						</div>
+
+						<label class="col-md-1 control-lable">Surname</label>
+						<div class="col-md-3">
+							<input id="surname" type="text" data-ng-model="filter.surname"
+								class="form-control input-sm" placeholder="Enter surname" />
+						</div>
+
+						<label class="col-md-1 control-lable">CUIT</label>
+						<div class="col-md-3">
+							<input id="cuit" type="text" data-ng-model="filter.cuit"
+								class="form-control input-sm" placeholder="Enter CUIT" />
+						</div>
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<div class="panel-footer">
+			<button id="filter" type="button" data-ng-click="filterAll()"
+				class="btn btn-primary btn-sm ">Search</button>
+			<!-- href="#/customers" -->
+			<button type="button" data-ng-click="goCreate()"
+				class="btn btn-primary btn-sm" data-ng-disabled="myForm.$invalid">Add</button>
+		</div>
+
+	</div>
+
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+		<div class="panel-heading">
+			<span class="lead">List of Customers </span>
+		</div>
+		<div class="panel-body">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID.</th>
+						<th>Name</th>
+						<th>Surname</th>
+						<th>CUIT</th>
+						<th width="20%"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="u in customers">
+						<td><span data-ng-bind="u.id"></span></td>
+						<td><span data-ng-bind="u.name"></span></td>
+						<td><span data-ng-bind="u.surname"></span></td>
+						<td><span data-ng-bind="u.cuit"></span></td>
+						<td>
+							<button type="button" data-ng-click="goEdit(u.id)"
+								class="btn btn-primary custom-width">Edit</button>
+							<button type="button" data-ng-click="remove(u.id)"
+								class="btn btn-warning custom-width">Remove</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	document.getElementById("name").focus();
+	document.getElementById("name").addEventListener("keyup", function(event) {
+		event.preventDefault();
+		if (event.keyCode == 13) {
+			document.getElementById("filter").click();
+		}
+	});
+	document.getElementById("surname").addEventListener("keyup",
+			function(event) {
+				event.preventDefault();
+				if (event.keyCode == 13) {
+					document.getElementById("filter").click();
+				}
+			});
+	document.getElementById("cuit").addEventListener("keyup", function(event) {
+		event.preventDefault();
+		if (event.keyCode == 13) {
+			document.getElementById("filter").click();
+		}
+	});
+	
+	</script>
